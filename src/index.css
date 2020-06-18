@@ -58,9 +58,38 @@ p {
 .content {
   top: 50%;
   left: 50%;
+  margin: 0 40px;
   position: relative;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+  content: "";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+  width: 100%;
+  content: "";
+  display: table;
+}
+
+.column {
+  width: 25%;
+  float: left;
+  display: block;
+  text-align: left;
 }
 
 .contact {
