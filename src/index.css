@@ -22,6 +22,7 @@ body {
 
 h1 {
   font-size: 48px;
+  margin-bottom: 40px;
 }
 
 p {
@@ -36,7 +37,7 @@ p {
   background-image: url("../assets/people.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 
 .overlay {
@@ -46,22 +47,26 @@ p {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .logo {
-  top: 40px;
+  /* top: 40px;
   left: 40px;
-  position: absolute;
+  position: absolute; */
+  width: 100%;
+  height: 150px;
 }
 
 .content {
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  margin: 0 40px;
+  transform: translate(-50%, -50%); */
+  margin: 0 auto;
+  padding: 0 40px;
   position: relative;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .table {
@@ -85,18 +90,45 @@ p {
   display: table;
 }
 
+.header {
+  text-decoration: underline;
+}
+
+.header,
 .column {
   width: 25%;
   float: left;
   display: block;
   text-align: left;
+  padding: 10px 5px;
+  border-bottom: 1px solid #616161;
 }
 
+/* .number {
+  text-align: right;
+} */
+
 .contact {
-  bottom: 40px;
+  /* bottom: 40px;
   left: 40px;
-  position: absolute;
+  position: absolute; */
+  width: 100%;
+  height: 50px;
+  padding-left: 40px;
 }
 
 @media (max-width: 800px) {
+  .logo,
+  .content,
+  .contact {
+    display: block;
+    position: relative;
+  }
+
+  .contact {
+    left: auto;
+    bottom: auto;
+    display: block;
+    position: relative;
+  }
 }
