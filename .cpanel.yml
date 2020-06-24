@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export PATH=/home/thepinkh/public_html/
+    - /bin/cp -r * $PATH
